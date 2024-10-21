@@ -32,6 +32,6 @@ public class BookController {
 	
 	@PostMapping("/books")
 	public Book addBook(@RequestBody Book newBook) {
-		return this.bookRepo.saveAndFlush(newBook);
+		return this.bookRepo.save(newBook);
 	}
 }
